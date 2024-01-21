@@ -1,5 +1,5 @@
 const homeRoute = (req,res) => {
-    res.send("Esteissy Macdonald");
+    res.send("Jason Macdonald's Contacts API");
 }
 
 const kidsRoute = (req, res) => {
