@@ -1,0 +1,29 @@
+//localhost
+
+//GET request that retrieves all contacts in the DB
+GET localhost:8080/contacts
+
+//GET request that retrieves the contact with the ID: 65acbaf05f39ad0b82024d26
+GET localhost:8080/contacts/65acbaf05f39ad0b82024d26
+
+//GET request that retrieves the contact with the ID: 65acbb3e5f39ad0b82024d27
+GET localhost:8080/contacts/65acbb3e5f39ad0b82024d27
+
+//GET request that retrieves the contact with the ID: 65acbb5e5f39ad0b82024d28
+GET localhost:8080/contacts/65acbb5e5f39ad0b82024d28
+
+
+
+//Production Requests
+
+//GET request that retrieves all contacts in the DB
+GET https://cse-341-jason-macdonald.onrender.com/contacts
+
+//GET request that retrieves the contact with the ID: 65acbaf05f39ad0b82024d26
+GET https://cse-341-jason-macdonald.onrender.com/contacts/65acbaf05f39ad0b82024d26
+
+//GET request that retrieves the contact with the ID: 65acbb3e5f39ad0b82024d27
+GET https://cse-341-jason-macdonald.onrender.com/contacts/65acbb3e5f39ad0b82024d27
+
+//GET request that retrieves the contact with the ID: 65acbb5e5f39ad0b82024d28
+GET https://cse-341-jason-macdonald.onrender.com/contacts/65acbb5e5f39ad0b82024d28
