@@ -1,0 +1,28 @@
+{
+    "contact1": 
+    {
+        "firstName" : "Miguel",
+        "lastName" : "Rivera",
+        "email" : "soyunmusico@gmail.com",
+        "favoriteColor" : "Red",
+        "birthday" : "10/25/2014"
+    },
+
+    "contact2": 
+    {
+        "firstName" : "Hector",
+        "lastName" : "Rivera",
+        "email" : "noabandoneamifamilia@gmail.com",
+        "favoriteColor" : "Negro",
+        "birthday" : "8/18/1928"
+    }, 
+
+    "contact3": 
+    {
+        "firstName" : "Imedla",
+        "lastName" : "Rivera",
+        "email" : "yomandoenmifamilia@gmail.com",
+        "favoriteColor" : "Purple",
+        "birthday" : "07/15/1929"
+    }
+}
