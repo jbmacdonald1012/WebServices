@@ -1,29 +1,82 @@
-//localhost
+//LOCALHOST
 
-//GET request that retrieves all contacts in the DB
+### GET all contacts
 GET localhost:8080/contacts
 
-//GET request that retrieves the contact with the ID: 65acbaf05f39ad0b82024d26
+### GET request that retrieves the contact with the ID: 65acbaf05f39ad0b82024d26
 GET localhost:8080/contacts/65acbaf05f39ad0b82024d26
 
-//GET request that retrieves the contact with the ID: 65acbb3e5f39ad0b82024d27
+### GET request that retrieves the contact with the ID: 65acbb3e5f39ad0b82024d27
 GET localhost:8080/contacts/65acbb3e5f39ad0b82024d27
 
-//GET request that retrieves the contact with the ID: 65acbb5e5f39ad0b82024d28
+### GET request that retrieves the contact with the ID: 65acbb5e5f39ad0b82024d28
 GET localhost:8080/contacts/65acbb5e5f39ad0b82024d28
 
+### POST request that creates a new contact in the DB
+POST localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Johnny",
+    "lastName":"Bravo",
+    "email":"jbravo@testmail.com",
+    "favoriteColor":"black",
+    "birthday":"12/25/1950"
+}
+
+### PUT request that updates data about a contact using the contact ID: 
+PUT localhost:8080/contacts/65acbb3e5f39ad0b82024d27 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Hector",
+    "lastName":"Rivera",
+    "email":"soymusico@gmail.com",
+    "favoriteColor":"Green",
+    "birthday":"08/18/1926"
+}
+
+### DELETE request that removes a contact using the contact ID: 
+DELETE localhost:8080/contacts/<id> HTTP/1.1
 
 
 //Production Requests
 
-//GET request that retrieves all contacts in the DB
+### GET request that retrieves all contacts in the DB
 GET https://cse-341-jason-macdonald.onrender.com/contacts
 
-//GET request that retrieves the contact with the ID: 65acbaf05f39ad0b82024d26
+### GET request that retrieves the contact with the ID: 65acbaf05f39ad0b82024d26
 GET https://cse-341-jason-macdonald.onrender.com/contacts/65acbaf05f39ad0b82024d26
 
-//GET request that retrieves the contact with the ID: 65acbb3e5f39ad0b82024d27
+### GET request that retrieves the contact with the ID: 65acbb3e5f39ad0b82024d27
 GET https://cse-341-jason-macdonald.onrender.com/contacts/65acbb3e5f39ad0b82024d27
 
-//GET request that retrieves the contact with the ID: 65acbb5e5f39ad0b82024d28
+### GET request that retrieves the contact with the ID: 65acbb5e5f39ad0b82024d28
 GET https://cse-341-jason-macdonald.onrender.com/contacts/65acbb5e5f39ad0b82024d28
+
+### POST request that creates a new contact in the DB
+POST https://cse-341-jason-macdonald.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Johnny",
+    "lastName":"Bravo",
+    "email":"jbravo@testmail.com",
+    "favoriteColor":"black",
+    "birthday":"12/25/1950"
+}
+
+### PUT request that updates data about a contact using the contact ID: 
+PUT https://cse-341-jason-macdonald.onrender.com/contacts/<id> HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Hector",
+    "lastName":"Rivera",
+    "email":"soymusico@gmail.com",
+    "favoriteColor":"Green",
+    "birthday":"08/18/1926"
+}
+
+### DELETE request that removes a contact using the contact ID: 
+DELETE https://cse-341-jason-macdonald.onrender.com/contacts/<id> HTTP/1.1
