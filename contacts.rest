@@ -66,8 +66,8 @@ content-type: application/json
     "birthday":"12/25/1950"
 }
 
-### PUT request that updates data about a contact using the contact ID: 
-PUT https://cse-341-jason-macdonald.onrender.com/contacts/<id> HTTP/1.1
+### PUT request that updates data about a contact using the contact ID: 65acbb3e5f39ad0b82024d27 (This can be updated as needed)
+PUT https://cse-341-jason-macdonald.onrender.com/contacts/65acbb3e5f39ad0b82024d27 HTTP/1.1
 content-type: application/json
 
 {
@@ -78,5 +78,5 @@ content-type: application/json
     "birthday":"08/18/1926"
 }
 
-### DELETE request that removes a contact using the contact ID: 
-DELETE https://cse-341-jason-macdonald.onrender.com/contacts/<id> HTTP/1.1
+### DELETE request that removes a contact using the contact ID: 65b5b616fbecf10bc735d5a9 (This is live in the DB currently and can be deleted)
+DELETE https://cse-341-jason-macdonald.onrender.com/contacts/65b5b616fbecf10bc735d5a9 HTTP/1.1
