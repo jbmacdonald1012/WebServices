@@ -3,7 +3,7 @@ const { ObjectId } = require('mongodb');
 const mongodb = require('../db/connect');
 
 const getAllContacts = async (request, response) => {
-  const result = await mongodb.getDb().db('main_db').collection('contacts').find();
+  const result = await mongodb.getDb('main_db').collection('contacts').find();
 
   result.toArray().then((contactsList) => {
     response.setHeader('Content-Type', 'application/json');
@@ -13,7 +13,7 @@ const getAllContacts = async (request, response) => {
 
 const getSingleContact = async (request, response) => {
   const userId = new ObjectId(request.params.id);
-  const result = await mongodb.getDb().db('main_db').collection('contacts').find({ _id: userId });
+  const result = await mongodb.getDb('main_db').collection('contacts').find({ _id: userId });
 
   result.toArray().then((contactsList) => {
     response.setHeader('Content-Type', 'application/json');
@@ -30,7 +30,7 @@ const createContact = async (request, response) => {
     birthday: request.body.birthday
   };
 
-  const db = mongodb.getDb();
+  const db = mongodb.getDb('main_db');
 
   const result = await db.collection('contacts').insertOne(newContact);
 
@@ -53,7 +53,7 @@ const updateContact = async (request, response) => {
     birthday: request.body.birthday
   };
 
-  const db = mongodb.getDb();
+  const db = mongodb.getDb('main_db');
 
   const result = await db.collection('contacts').replaceOne({ _id: contactId }, contact);
 
@@ -69,7 +69,7 @@ const updateContact = async (request, response) => {
 const deleteContact = async (request, response) => {
   const contactId = new ObjectId(request.params.id);
 
-  const db = mongodb.getDb();
+  const db = mongodb.getDb('main_db');
 
   const result = await db.collection('contacts').deleteOne({ _id: contactId });
 
