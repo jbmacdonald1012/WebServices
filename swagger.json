@@ -5,7 +5,7 @@
     "description": "API that gets, creates, updates, and deletes contacts from a DB",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-jason-macdonald.onrender.com",
+  "host": "cse-341-jason-macdonald.onrender.com",
   "basePath": "/",
   "schemes": ["http"],
   "paths": {
