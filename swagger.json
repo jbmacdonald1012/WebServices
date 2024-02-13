@@ -6,7 +6,7 @@
     "version": "1.0.0"
   },
   "host": "https://cse-341-jason-macdonald.onrender.com",
-  "basePath": "/api-docs",
+  "basePath": "/",
   "schemes": ["http"],
   "paths": {
     "/api-docs": {
