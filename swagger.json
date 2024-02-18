@@ -7,7 +7,7 @@
   },
   "host": "cse-341-jason-macdonald.onrender.com",
   "basePath": "/",
-  "schemes": ["http", "https"],
+  "schemes": ["https"],
   "paths": {
     "/api-docs": {
       "get": {
